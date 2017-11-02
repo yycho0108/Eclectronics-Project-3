@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -532,25 +532,17 @@ F 3 "" H 5000 2325 50  0001 C CNN
 	1    5000 2325
 	1    0    0    -1  
 $EndComp
-Text HLabel 9800 5100 2    60   Output ~ 0
-TX?OUT1
-Text HLabel 9800 5300 2    60   Output ~ 0
-TX?OUT2
 $Comp
 L GND #PWR?
 U 1 1 59FB1823
-P 2000 1575
-F 0 "#PWR?" H 2000 1325 50  0001 C CNN
-F 1 "GND" H 2000 1425 50  0000 C CNN
-F 2 "" H 2000 1575 50  0001 C CNN
-F 3 "" H 2000 1575 50  0001 C CNN
-	1    2000 1575
+P 1025 2725
+F 0 "#PWR?" H 1025 2475 50  0001 C CNN
+F 1 "GND" H 1025 2575 50  0000 C CNN
+F 2 "" H 1025 2725 50  0001 C CNN
+F 3 "" H 1025 2725 50  0001 C CNN
+	1    1025 2725
 	1    0    0    -1  
 $EndComp
-Text HLabel 8200 5100 0    60   Input ~ 0
-TX?IN1
-Text HLabel 8200 5300 0    60   Input ~ 0
-TX?IN2
 $Comp
 L MAX232 U?
 U 1 1 59FB1D6D
@@ -663,14 +655,20 @@ Wire Wire Line
 Wire Wire Line
 	4300 1075 4125 1075
 Wire Wire Line
-	4300 625  4300 1525
+	4300 625  4300 800 
+Wire Wire Line
+	4300 800  4300 1075
+Wire Wire Line
+	4300 1075 4300 1525
 Wire Wire Line
 	4125 800  4300 800 
 Connection ~ 4300 1075
 Wire Wire Line
 	3650 1425 3700 1425
 Wire Wire Line
-	3650 800  3650 1425
+	3650 800  3650 1075
+Wire Wire Line
+	3650 1075 3650 1425
 Wire Wire Line
 	3650 1075 3825 1075
 Connection ~ 3650 1075
@@ -678,16 +676,24 @@ Wire Wire Line
 	3650 800  3825 800 
 Connection ~ 3050 1425
 Wire Wire Line
-	3350 625  3350 1575
+	3350 625  3350 1425
+Wire Wire Line
+	3350 1425 3350 1575
 Wire Wire Line
 	4300 625  3650 625 
 Connection ~ 4300 800 
 Connection ~ 3350 1425
 Connection ~ 1300 1025
 Wire Wire Line
-	750  1025 1425 1025
+	750  1025 1025 1025
 Wire Wire Line
-	3050 925  3050 1525
+	1025 1025 1300 1025
+Wire Wire Line
+	1300 1025 1425 1025
+Wire Wire Line
+	3050 925  3050 1425
+Wire Wire Line
+	3050 1425 3050 1525
 Wire Wire Line
 	3050 925  2900 925 
 Wire Wire Line
@@ -699,7 +705,9 @@ Wire Wire Line
 Wire Wire Line
 	5275 925  5325 925 
 Wire Wire Line
-	5875 925  5875 1525
+	5875 925  5875 1425
+Wire Wire Line
+	5875 1425 5875 1525
 Wire Wire Line
 	5875 925  5625 925 
 Wire Wire Line
@@ -711,31 +719,43 @@ Wire Wire Line
 Wire Wire Line
 	3350 1875 3350 2025
 Wire Wire Line
-	750  1325 1300 1325
+	750  1325 1025 1325
+Wire Wire Line
+	1025 1325 1300 1325
 Connection ~ 1025 1325
 Connection ~ 1025 1025
 Wire Wire Line
-	6200 950  7875 950 
+	6200 950  7575 950 
+Wire Wire Line
+	7575 950  7875 950 
 Wire Wire Line
 	7875 950  7875 1450
 Wire Wire Line
 	7875 1450 8025 1450
 Wire Wire Line
-	5275 1925 5275 2175
+	5275 1925 5275 2025
 Wire Wire Line
-	4900 2325 5100 2325
+	5275 2025 5275 2175
+Wire Wire Line
+	4900 2325 5000 2325
+Wire Wire Line
+	5000 2325 5100 2325
 Connection ~ 5000 2325
 Wire Wire Line
-	4900 2025 6250 2025
+	4900 2025 5100 2025
+Wire Wire Line
+	5100 2025 5275 2025
+Wire Wire Line
+	5275 2025 6250 2025
 Connection ~ 5275 2025
 Connection ~ 5100 2025
 Wire Wire Line
 	7575 1625 7575 950 
 Connection ~ 7575 950 
 Wire Wire Line
-	1850 1575 2000 1575
+	9000 3800 9600 3800
 Wire Wire Line
-	9000 3800 10250 3800
+	9600 3800 10250 3800
 Wire Wire Line
 	10250 3800 10250 4300
 Wire Wire Line
@@ -755,7 +775,9 @@ Wire Wire Line
 	6250 2025 6250 1625
 Connection ~ 6200 950 
 Wire Wire Line
-	6175 1425 6250 1425
+	6175 1425 6200 1425
+Wire Wire Line
+	6200 1425 6250 1425
 Connection ~ 5875 1425
 Wire Wire Line
 	6200 1425 6200 1250
@@ -765,9 +787,9 @@ NOTE : Flipped Op Amp
 Wire Wire Line
 	6850 1525 7275 1525
 Text HLabel 1025 1975 0    60   Input ~ 0
-SW1
+SW?b
 Text HLabel 1850 1425 0    60   Input ~ 0
-SW2
+SW?a
 $Comp
 L TCT40-16R/T U?
 U 1 1 59FAA88E
@@ -779,4 +801,16 @@ F 3 "" H 1025 2350 60  0001 C CNN
 	1    1025 2350
 	0    1    1    0   
 $EndComp
+Text HLabel 8200 5300 0    60   Input ~ 0
+TX?b
+Text HLabel 8200 5100 0    60   Input ~ 0
+TX?a
+Text Label 9800 5100 0    60   ~ 0
+TX1
+Text Label 9800 5300 0    60   ~ 0
+TX2
+Text Label 1025 1975 0    60   ~ 0
+TX1
+Text Label 1025 2725 0    60   ~ 0
+TX2
 $EndSCHEMATC
