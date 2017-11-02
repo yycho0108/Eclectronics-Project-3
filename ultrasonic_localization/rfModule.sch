@@ -1,6 +1,9 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -29,6 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:custom
+LIBS:ultrasonic_localization-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -278,16 +282,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 2150 4400 2250
 Connection ~ 4300 2150
-Text Label 3200 3150 2    60   ~ 0
-CE
-Text Label 3200 3250 2    60   ~ 0
-CSN
-Text Label 3200 3350 2    60   ~ 0
-SCK
-Text Label 3200 3450 2    60   ~ 0
-MOSI
-Text Label 3200 3550 2    60   ~ 0
-MISO
 $Comp
 L C C?
 U 1 1 59FAB50E
@@ -461,4 +455,14 @@ Wire Wire Line
 	4000 5300 4000 5400
 Wire Wire Line
 	4700 5300 4700 5400
+Text HLabel 3200 3250 0    60   Input ~ 0
+CSN
+Text HLabel 3200 3350 0    60   Input ~ 0
+SCK
+Text HLabel 3200 3450 0    60   Input ~ 0
+MOSI
+Text HLabel 3200 3550 0    60   Input ~ 0
+MISO
+Text HLabel 3200 3150 0    60   Input ~ 0
+CE
 $EndSCHEMATC
