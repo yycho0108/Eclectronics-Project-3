@@ -1,6 +1,9 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -29,12 +32,12 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:custom
-LIBS:rfModule-cache
+LIBS:ultrasonic_localization-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -477,4 +480,6 @@ NoConn ~ 8300 3800
 NoConn ~ 8400 3800
 NoConn ~ 8500 3800
 NoConn ~ 8600 3800
+Text Notes 5975 2525 0    60   ~ 0
+LATENCY\n
 $EndSCHEMATC
