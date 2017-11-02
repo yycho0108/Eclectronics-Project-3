@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -152,7 +152,7 @@ Text Label 2500 2600 2    60   ~ 0
 VDD
 $Comp
 L GND #PWR?
-U 1 1 59FAAB42
+U 1 1 59FC0938
 P 2950 2950
 F 0 "#PWR?" H 2950 2700 50  0001 C CNN
 F 1 "GND" H 2950 2800 50  0000 C CNN
