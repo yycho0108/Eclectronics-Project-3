@@ -829,4 +829,10 @@ Wire Notes Line
 	525  1300 525  500 
 Text Notes 1025 625  0    60   ~ 0
 Bypass Capacitors
+$Sheet
+S 7450 2450 1750 1250
+U 59FB0E42
+F0 "Sound Module" 60
+F1 "soundModule.sch" 60
+$EndSheet
 $EndSCHEMATC
