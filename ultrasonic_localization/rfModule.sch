@@ -1,9 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -32,12 +29,12 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:custom
-LIBS:ultrasonic_localization-cache
+LIBS:rfModule-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -384,7 +381,7 @@ Connection ~ 6050 4050
 Wire Wire Line
 	6450 3350 6800 3350
 Wire Wire Line
-	7100 3350 7650 3350
+	7100 3350 8000 3350
 Wire Wire Line
 	7400 3350 7400 3450
 $Comp
@@ -426,8 +423,6 @@ Wire Wire Line
 	6400 4350 6400 4500
 Wire Wire Line
 	7400 3750 7400 3900
-Text Label 7650 3350 0    60   ~ 0
-50ohmRF
 Connection ~ 7400 3350
 $Comp
 L GND #PWR?
@@ -465,4 +460,21 @@ Text HLabel 3200 3550 0    60   Input ~ 0
 MISO
 Text HLabel 3200 3150 0    60   Input ~ 0
 CE
+$Comp
+L ANT016008LCS2442MA2 U?
+U 1 1 59FC6AEB
+P 8450 3450
+F 0 "U?" H 8450 3650 60  0000 C CNN
+F 1 "ANT016008LCS2442MA2" H 8450 3750 60  0000 C CNN
+F 2 "" H 8450 3450 60  0001 C CNN
+F 3 "" H 8450 3450 60  0001 C CNN
+	1    8450 3450
+	1    0    0    -1  
+$EndComp
+Text Label 8900 3350 0    60   ~ 0
+RF
+NoConn ~ 8300 3800
+NoConn ~ 8400 3800
+NoConn ~ 8500 3800
+NoConn ~ 8600 3800
 $EndSCHEMATC
