@@ -572,4 +572,136 @@ Text HLabel 3500 900  2    60   Output ~ 0
 3V3
 Text Notes 8225 3550 0    60   ~ 0
 NOTE: Battery Terminals,\nnot actual batteries here
+$Comp
+L R R?
+U 1 1 59FD3A5A
+P 2675 5550
+F 0 "R?" V 2755 5550 50  0000 C CNN
+F 1 "20K" V 2675 5550 50  0000 C CNN
+F 2 "" V 2605 5550 50  0001 C CNN
+F 3 "" H 2675 5550 50  0001 C CNN
+	1    2675 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59FD3A60
+P 2675 5850
+F 0 "R?" V 2755 5850 50  0000 C CNN
+F 1 "1K" V 2675 5850 50  0000 C CNN
+F 2 "" V 2605 5850 50  0001 C CNN
+F 3 "" H 2675 5850 50  0001 C CNN
+	1    2675 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AP3012 U?
+U 1 1 59FD3A66
+P 1925 5700
+F 0 "U?" H 1925 6050 60  0000 C CNN
+F 1 "AP3012" H 1925 5700 60  0000 C CNN
+F 2 "" H 1925 5700 60  0001 C CNN
+F 3 "" H 1925 5700 60  0001 C CNN
+	1    1925 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 59FD3A6C
+P 2425 5150
+F 0 "D?" H 2425 5250 50  0000 C CNN
+F 1 "D" H 2425 5050 50  0000 C CNN
+F 2 "" H 2425 5150 50  0001 C CNN
+F 3 "" H 2425 5150 50  0001 C CNN
+	1    2425 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L L L?
+U 1 1 59FD3A72
+P 1925 5150
+F 0 "L?" V 1875 5150 50  0000 C CNN
+F 1 "L" V 2000 5150 50  0000 C CNN
+F 2 "" H 1925 5150 50  0001 C CNN
+F 3 "" H 1925 5150 50  0001 C CNN
+	1    1925 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 59FD3A78
+P 1175 6100
+F 0 "C?" H 1200 6200 50  0000 L CNN
+F 1 "1uf" H 1200 6000 50  0000 L CNN
+F 2 "" H 1213 5950 50  0001 C CNN
+F 3 "" H 1175 6100 50  0001 C CNN
+	1    1175 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 59FD3A7E
+P 2975 5700
+F 0 "C?" H 3000 5800 50  0000 L CNN
+F 1 "1uF" H 3000 5600 50  0000 L CNN
+F 2 "" H 3013 5550 50  0001 C CNN
+F 3 "" H 2975 5700 50  0001 C CNN
+	1    2975 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 5150 2275 5150
+Connection ~ 2125 5150
+Wire Wire Line
+	2575 5150 3125 5150
+Wire Wire Line
+	2675 5400 2675 5150
+Connection ~ 2675 5150
+Wire Wire Line
+	2975 5550 2975 5150
+Connection ~ 2975 5150
+$Comp
+L GND #PWR?
+U 1 1 59FD3A8B
+P 1925 6400
+F 0 "#PWR?" H 1925 6150 50  0001 C CNN
+F 1 "GND" H 1925 6250 50  0000 C CNN
+F 2 "" H 1925 6400 50  0001 C CNN
+F 3 "" H 1925 6400 50  0001 C CNN
+	1    1925 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1175 6250 1175 6400
+Wire Wire Line
+	1175 6400 2975 6400
+Wire Wire Line
+	1925 6400 1925 6250
+Wire Wire Line
+	2675 6400 2675 6000
+Connection ~ 1925 6400
+Wire Wire Line
+	2975 6400 2975 5850
+Connection ~ 2675 6400
+Wire Wire Line
+	1175 5150 1175 5950
+Wire Wire Line
+	875  5150 1775 5150
+Connection ~ 1725 5150
+Connection ~ 1175 5700
+Text Label 875  5150 2    60   ~ 0
+3V7
+Connection ~ 1175 5150
+Text Notes 1550 6800 0    60   ~ 0
+Boost Converter, 26V
+Wire Notes Line
+	3700 4825 600  4825
+Wire Notes Line
+	600  4825 600  7050
+Wire Notes Line
+	600  7050 3700 7050
+Wire Notes Line
+	3700 7050 3700 4825
+Text HLabel 3125 5150 2    60   Output ~ 0
+26V
 $EndSCHEMATC

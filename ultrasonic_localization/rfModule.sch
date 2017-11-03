@@ -480,6 +480,4 @@ NoConn ~ 8300 3800
 NoConn ~ 8400 3800
 NoConn ~ 8500 3800
 NoConn ~ 8600 3800
-Text Notes 5975 2525 0    60   ~ 0
-LATENCY\n
 $EndSCHEMATC
