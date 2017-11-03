@@ -324,17 +324,6 @@ $EndComp
 Text Notes 1025 625  0    60   ~ 0
 Power & Bypass Capacitors
 $Comp
-L ATMEGA32U4RC-AU U?
-U 1 1 59F4A6C5
-P 3100 3425
-F 0 "U?" H 3100 3450 50  0000 C CNN
-F 1 "ATMEGA32U4RC-AU" H 3800 1925 50  0000 C CNN
-F 2 "TQFP44" H 3100 3425 50  0001 C CIN
-F 3 "" H 4200 4525 50  0001 C CNN
-	1    3100 3425
-	1    0    0    -1  
-$EndComp
-$Comp
 L Crystal_GND23 Y?
 U 1 1 59FBA6C6
 P 1275 2375
@@ -392,12 +381,12 @@ $EndSheet
 $Comp
 L MD0105 U?
 U 1 1 59FAAFC6
-P 10200 1725
-F 0 "U?" H 10200 1625 50  0000 C CNN
-F 1 "MD0105" H 10200 1825 50  0000 C CNN
-F 2 "MODULE" H 10200 1725 50  0001 C CNN
-F 3 "DOCUMENTATION" H 10200 1725 50  0001 C CNN
-	1    10200 1725
+P 10200 2000
+F 0 "U?" H 10200 1900 50  0000 C CNN
+F 1 "MD0105" H 10200 2100 50  0000 C CNN
+F 2 "MODULE" H 10200 2000 50  0001 C CNN
+F 3 "DOCUMENTATION" H 10200 2000 50  0001 C CNN
+	1    10200 2000
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -492,31 +481,31 @@ Text Label 8025 825  2    60   ~ 0
 THRESH
 Text Label 8025 1900 2    60   ~ 0
 THRESH
-Text Label 9450 1425 2    60   ~ 0
+Text Label 9450 1700 2    60   ~ 0
 SW1a
-Text Label 9450 1625 2    60   ~ 0
+Text Label 9450 1900 2    60   ~ 0
 SW2a
-Text Label 9450 1825 2    60   ~ 0
+Text Label 9450 2100 2    60   ~ 0
 SW3a
-Text Label 9450 2025 2    60   ~ 0
+Text Label 9450 2300 2    60   ~ 0
 SW4a
-NoConn ~ 9450 1325
-NoConn ~ 9450 1525
-NoConn ~ 9450 1725
-NoConn ~ 9450 1925
-NoConn ~ 9450 2125
-NoConn ~ 10950 2125
-NoConn ~ 10950 1925
-NoConn ~ 10950 1725
-NoConn ~ 10950 1525
-NoConn ~ 10950 1325
-Text Label 10950 1425 0    60   ~ 0
+NoConn ~ 9450 1600
+NoConn ~ 9450 1800
+NoConn ~ 9450 2000
+NoConn ~ 9450 2200
+NoConn ~ 9450 2400
+NoConn ~ 10950 2400
+NoConn ~ 10950 2200
+NoConn ~ 10950 2000
+NoConn ~ 10950 1800
+NoConn ~ 10950 1600
+Text Label 10950 1700 0    60   ~ 0
 SW1b
-Text Label 10950 1625 0    60   ~ 0
+Text Label 10950 1900 0    60   ~ 0
 SW2b
-Text Label 10950 1825 0    60   ~ 0
+Text Label 10950 2100 0    60   ~ 0
 SW3b
-Text Label 10950 2025 0    60   ~ 0
+Text Label 10950 2300 0    60   ~ 0
 SW4b
 Text Label 6800 950  2    60   ~ 0
 SW1a
@@ -537,24 +526,13 @@ SW4b
 Text Notes 8325 2750 0    60   ~ 0
 Ultrasonic Transceivers
 NoConn ~ 4200 2275
-NoConn ~ 4200 2375
 NoConn ~ 4200 2475
 NoConn ~ 4200 2575
 NoConn ~ 4200 2775
 NoConn ~ 4200 2875
-NoConn ~ 4200 3075
 NoConn ~ 4200 3175
 NoConn ~ 4200 3275
 NoConn ~ 4200 3375
-NoConn ~ 4200 3475
-NoConn ~ 4200 3575
-NoConn ~ 4200 3675
-NoConn ~ 4200 3775
-NoConn ~ 4200 4075
-NoConn ~ 4200 4275
-NoConn ~ 4200 4375
-NoConn ~ 4200 4475
-NoConn ~ 4200 4575
 NoConn ~ 4200 4675
 NoConn ~ 4200 4775
 NoConn ~ 9850 5225
@@ -679,4 +657,192 @@ Text Label 4475 600  0    60   ~ 0
 +26V
 Text Notes 1375 6150 0    60   ~ 0
 ID of module\n
+$Comp
+L SW_SPDT SW?
+U 1 1 59FCFB66
+P 1675 6450
+F 0 "SW?" H 1675 6620 50  0000 C CNN
+F 1 "SW_SPDT" H 1675 6250 50  0000 C CNN
+F 2 "" H 1675 6450 50  0001 C CNN
+F 3 "" H 1675 6450 50  0001 C CNN
+	1    1675 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59FD074D
+P 1475 6550
+F 0 "#PWR?" H 1475 6300 50  0001 C CNN
+F 1 "GND" H 1475 6400 50  0000 C CNN
+F 2 "" H 1475 6550 50  0001 C CNN
+F 3 "" H 1475 6550 50  0001 C CNN
+	1    1475 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59FD0DEE
+P 1475 6350
+F 0 "#PWR?" H 1475 6200 50  0001 C CNN
+F 1 "+5V" H 1475 6490 50  0000 C CNN
+F 2 "" H 1475 6350 50  0001 C CNN
+F 3 "" H 1475 6350 50  0001 C CNN
+	1    1475 6350
+	1    0    0    -1  
+$EndComp
+Text Label 1875 6450 0    60   ~ 0
+ID
+$Comp
+L BUK9Y29-40E Q?
+U 1 1 59FD4416
+P 10300 800
+F 0 "Q?" H 10500 850 50  0000 L CNN
+F 1 "BUK9Y29-40E" H 10500 750 50  0000 L CNN
+F 2 "" H 10500 900 50  0001 C CNN
+F 3 "" H 10300 800 50  0001 C CNN
+	1    10300 800 
+	1    0    0    -1  
+$EndComp
+Text Label 10400 625  0    60   ~ 0
+TXa
+Text Label 10100 800  2    60   ~ 0
+OSC
+Text Label 10375 1000 3    60   ~ 0
++26V
+Wire Wire Line
+	10350 1000 10400 1000
+Connection ~ 10375 1000
+Text Label 6800 1200 2    60   ~ 0
+TXa
+Text Label 8025 1200 2    60   ~ 0
+TXa
+Text Label 8025 2275 2    60   ~ 0
+TXa
+Text Label 6800 2275 2    60   ~ 0
+TXa
+$Comp
+L GND #PWR?
+U 1 1 59FD82C0
+P 6700 1325
+F 0 "#PWR?" H 6700 1075 50  0001 C CNN
+F 1 "GND" H 6700 1175 50  0000 C CNN
+F 2 "" H 6700 1325 50  0001 C CNN
+F 3 "" H 6700 1325 50  0001 C CNN
+	1    6700 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1325 6800 1325
+$Comp
+L GND #PWR?
+U 1 1 59FD880A
+P 7925 1325
+F 0 "#PWR?" H 7925 1075 50  0001 C CNN
+F 1 "GND" H 7925 1175 50  0000 C CNN
+F 2 "" H 7925 1325 50  0001 C CNN
+F 3 "" H 7925 1325 50  0001 C CNN
+	1    7925 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 1325 8025 1325
+$Comp
+L GND #PWR?
+U 1 1 59FD8AC0
+P 6675 2400
+F 0 "#PWR?" H 6675 2150 50  0001 C CNN
+F 1 "GND" H 6675 2250 50  0000 C CNN
+F 2 "" H 6675 2400 50  0001 C CNN
+F 3 "" H 6675 2400 50  0001 C CNN
+	1    6675 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 2400 6800 2400
+$Comp
+L GND #PWR?
+U 1 1 59FD8E67
+P 7925 2400
+F 0 "#PWR?" H 7925 2150 50  0001 C CNN
+F 1 "GND" H 7925 2250 50  0000 C CNN
+F 2 "" H 7925 2400 50  0001 C CNN
+F 3 "" H 7925 2400 50  0001 C CNN
+	1    7925 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 2400 8025 2400
+Text Label 7425 1075 0    60   ~ 0
+SIG1
+Text Label 8650 1075 0    60   ~ 0
+SIG2
+Text Label 7425 2150 0    60   ~ 0
+SIG3
+Text Label 8650 2150 0    60   ~ 0
+SIG4
+$Comp
+L ATMEGA32U4RC-AU U?
+U 1 1 59F4A6C5
+P 3100 3425
+F 0 "U?" H 3100 3450 50  0000 C CNN
+F 1 "ATMEGA32U4RC-AU" H 3800 1925 50  0000 C CNN
+F 2 "TQFP44" H 3100 3425 50  0001 C CIN
+F 3 "" H 4200 4525 50  0001 C CNN
+	1    3100 3425
+	1    0    0    -1  
+$EndComp
+Text Label 4200 3475 0    60   ~ 0
+SIG1
+Text Label 4200 3575 0    60   ~ 0
+SIG2
+Text Label 4200 3675 0    60   ~ 0
+SIG3
+Text Label 4200 3775 0    60   ~ 0
+SIG4
+Text Label 4200 2375 0    60   ~ 0
+OSC
+Text Notes 4425 2350 0    60   ~ 0
+40kHz PWM
+Text Notes 4450 3625 0    60   ~ 0
+CHECK DIGITAL SIG
+NoConn ~ 4200 4275
+NoConn ~ 4200 4375
+NoConn ~ 4200 4475
+NoConn ~ 4200 4575
+NoConn ~ 4200 3075
+Text Label 4200 4075 0    60   ~ 0
+ID
+Text Label 8000 3400 2    60   ~ 0
+SS
+Text Label 8000 3600 2    60   ~ 0
+SCK
+Text Label 8000 3800 2    60   ~ 0
+MOSI
+Text Label 8000 3975 2    60   ~ 0
+MISO
+$Comp
+L +5V #PWR?
+U 1 1 59FE2F7E
+P 7900 4150
+F 0 "#PWR?" H 7900 4000 50  0001 C CNN
+F 1 "+5V" H 7900 4290 50  0000 C CNN
+F 2 "" H 7900 4150 50  0001 C CNN
+F 3 "" H 7900 4150 50  0001 C CNN
+	1    7900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4150 7900 4150
+Text Notes 7775 4175 2    60   ~ 0
+Check CE does what we think it does
+Wire Notes Line
+	11200 4600 6975 4600
+Wire Notes Line
+	6975 4600 6975 6500
+Wire Notes Line
+	6975 6500 11200 6500
+Wire Notes Line
+	11200 6500 11200 4600
+Text Notes 8950 4775 0    60   ~ 0
+IMU somebody
 $EndSCHEMATC
