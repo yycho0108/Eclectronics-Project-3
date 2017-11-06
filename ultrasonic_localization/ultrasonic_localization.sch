@@ -651,8 +651,6 @@ Text Label 6550 5500 2    60   ~ 0
 MOSI
 Text Label 6550 5675 2    60   ~ 0
 MISO
-Text Notes 8375 6225 2    60   ~ 0
-TODO : Check CE does what we think it does
 $Comp
 L 4047 U5
 U 1 1 5A001EBD
