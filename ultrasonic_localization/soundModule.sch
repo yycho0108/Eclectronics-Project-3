@@ -664,15 +664,15 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 59FB1823
-P 2350 1825
+P 4450 2000
 AR Path="/59FBBECF/59FB1823" Ref="#PWR?"  Part="1" 
 AR Path="/59FBFC85/59FB1823" Ref="#PWR?"  Part="1" 
 AR Path="/59FBAACD/59FB1823" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2350 1575 50  0001 C CNN
-F 1 "GND" H 2350 1675 50  0000 C CNN
-F 2 "" H 2350 1825 50  0001 C CNN
-F 3 "" H 2350 1825 50  0001 C CNN
-	1    2350 1825
+F 0 "#PWR?" H 4450 1750 50  0001 C CNN
+F 1 "GND" H 4450 1850 50  0000 C CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 "" H 4450 2000 50  0001 C CNN
+	1    4450 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -778,31 +778,31 @@ Text Notes 7175 4875 0    60   ~ 0
 NOTE : Flipped Op Amp
 Wire Wire Line
 	8050 4225 8475 4225
-Text HLabel 2350 775  0    60   Input ~ 0
+Text HLabel 4450 950  0    60   Input ~ 0
 SWb
 Text HLabel 2625 3875 1    60   Input ~ 0
 SWa
 $Comp
 L TCT40-16R/T U?
 U 1 1 59FAA88E
-P 2350 1150
+P 4450 1325
 AR Path="/59FBBECF/59FAA88E" Ref="U?"  Part="1" 
 AR Path="/59FBFC85/59FAA88E" Ref="U?"  Part="1" 
 AR Path="/59FBAACD/59FAA88E" Ref="U?"  Part="1" 
-F 0 "U?" H 2350 1150 60  0000 C CNN
-F 1 "TCT40-16R/T" H 2350 1425 60  0000 C CNN
-F 2 "" H 2350 1150 60  0001 C CNN
-F 3 "" H 2350 1150 60  0001 C CNN
-	1    2350 1150
+F 0 "U?" H 4450 1325 60  0000 C CNN
+F 1 "TCT40-16R/T" H 4450 1600 60  0000 C CNN
+F 2 "" H 4450 1325 60  0001 C CNN
+F 3 "" H 4450 1325 60  0001 C CNN
+	1    4450 1325
 	0    1    1    0   
 $EndComp
-Text HLabel 2350 1525 0    60   Input ~ 0
+Text HLabel 4450 1700 0    60   Input ~ 0
 TXb
-Text HLabel 2350 675  0    60   Input ~ 0
+Text HLabel 4450 850  0    60   Input ~ 0
 TXa
-Text Label 2350 775  0    60   ~ 0
+Text Label 4450 950  0    60   ~ 0
 TX1
-Text Label 2350 1525 0    60   ~ 0
+Text Label 4450 1700 0    60   ~ 0
 TX2
 $Comp
 L D D?
@@ -855,19 +855,23 @@ Connection ~ 2850 4425
 $Comp
 L R R?
 U 1 1 59FBFEDB
-P 2350 1675
+P 4450 1850
 AR Path="/59FBBECF/59FBFEDB" Ref="R?"  Part="1" 
 AR Path="/59FBFC85/59FBFEDB" Ref="R?"  Part="1" 
 AR Path="/59FBAACD/59FBFEDB" Ref="R?"  Part="1" 
-F 0 "R?" V 2430 1675 50  0000 C CNN
-F 1 "R" V 2350 1675 50  0000 C CNN
-F 2 "" V 2280 1675 50  0001 C CNN
-F 3 "" H 2350 1675 50  0001 C CNN
-	1    2350 1675
+F 0 "R?" V 4530 1850 50  0000 C CNN
+F 1 "10K" V 4450 1850 50  0000 C CNN
+F 2 "" V 4380 1850 50  0001 C CNN
+F 3 "" H 4450 1850 50  0001 C CNN
+	1    4450 1850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2850 4425 3050 4425
 Wire Wire Line
-	2350 775  2350 675 
+	4450 950  4450 850 
+Text Notes 2925 4700 0    60   ~ 0
+VGND?
+Text Notes 3100 3200 0    60   ~ 0
+TODO - Fill Values\nCheck VGND
 $EndSCHEMATC
