@@ -791,4 +791,6 @@ Wire Notes Line
 	6750 7050 6750 4825
 Wire Notes Line
 	6750 4825 4100 4825
+Text Notes 5050 6825 0    60   ~ 0
+1V8 Regulator
 $EndSCHEMATC

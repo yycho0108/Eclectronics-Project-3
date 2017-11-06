@@ -122,16 +122,10 @@ Wire Wire Line
 Wire Wire Line
 	2875 4025 2875 4225
 Wire Wire Line
-	2575 4225 2875 4225
-Wire Wire Line
-	2875 4225 3000 4225
-Wire Wire Line
-	3000 4225 3375 4225
+	2575 4225 3375 4225
 Connection ~ 2875 4225
 Wire Wire Line
-	3825 4575 3825 4700
-Wire Wire Line
-	3825 4700 3825 4875
+	3825 4575 3825 4875
 Wire Wire Line
 	3825 4875 4225 4875
 Wire Wire Line
@@ -258,16 +252,7 @@ $EndComp
 Wire Wire Line
 	7625 4750 7625 4850
 Wire Wire Line
-	7625 4850 7875 4850
-Wire Wire Line
-	7875 4850 8125 4850
-Wire Wire Line
-	8125 4850 8325 4850
-Wire Wire Line
-	8325 4850 8575 4850
-Wire Wire Line
-	7875 4750 7875 4850
-Connection ~ 7875 4850
+	7875 4850 7875 4750
 Wire Wire Line
 	8125 4750 8125 4850
 Connection ~ 8125 4850
@@ -337,13 +322,9 @@ INT1
 Text Label 6475 4050 2    60   ~ 0
 INT2
 Wire Wire Line
-	6475 3650 6125 3650
+	5775 3650 6475 3650
 Wire Wire Line
-	6125 3650 5775 3650
-Wire Wire Line
-	6475 3850 5900 3850
-Wire Wire Line
-	5900 3850 5775 3850
+	5775 3850 6475 3850
 Wire Wire Line
 	6125 3650 6125 4000
 Connection ~ 6125 3650
@@ -362,9 +343,7 @@ F 3 "" H 5575 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5575 4300 5900 4300
-Wire Wire Line
-	5900 4300 6125 4300
+	5575 4300 6125 4300
 Connection ~ 5900 4300
 Text HLabel 8325 3650 2    60   Input ~ 0
 SCL
@@ -374,6 +353,20 @@ Text HLabel 7625 4250 2    60   Input ~ 0
 INT1
 Text HLabel 7875 4050 2    60   Input ~ 0
 INT2
-Text Notes 7625 5000 0    60   ~ 0
-PULLUP INT?
+$Comp
+L GND #PWR?
+U 1 1 5A04C7D6
+P 7725 4850
+F 0 "#PWR?" H 7725 4600 50  0001 C CNN
+F 1 "GND" H 7725 4700 50  0000 C CNN
+F 2 "" H 7725 4850 50  0001 C CNN
+F 3 "" H 7725 4850 50  0001 C CNN
+	1    7725 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 4850 7875 4850
+Connection ~ 7725 4850
+Wire Wire Line
+	8125 4850 8575 4850
 $EndSCHEMATC
