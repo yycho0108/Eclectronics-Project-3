@@ -1,0 +1,68 @@
+Circuit: * C:\Users\ycho\Desktop\Academics\2017\FA\eclectronics\projects\03_loc\filter.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+Gmin = 0.000275318
+vernier = 0.666667
+vernier = 0.888888
+Gmin = 6.27402e-005
+vernier = 1
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 1.84029e-005
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.0177557%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point.
+
+avg_in: AVG(v(in))=9.76874e-010 FROM 0 TO 0.000625
+avg_sig: AVG(v(sig))=0.0135999 FROM 0 TO 0.000625
+re_in: AVG((v(in)-avg_in)*cos(360*time*freq))=3.67313e-005 FROM 0 TO 0.000625
+im_in: AVG(-(v(in)-avg_in)*sin(360*time*freq))=-0.000493203 FROM 0 TO 0.000625
+re_sig: AVG((v(sig)-avg_sig)*cos(360*time*freq))=5.95522e-006 FROM 0 TO 0.000625
+im_sig: AVG(-(v(sig)-avg_sig)*sin(360*time*freq))=4.06819e-005 FROM 0 TO 0.000625
+gainmag: 20*log10(hypot(re_sig,im_sig)/hypot(re_in,im_in) )=-21.6044
+
+
+Date: Mon Nov 06 15:21:11 2017
+Total elapsed time: 3.370 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 105851
+traniter = 2680
+tranpoints = 1341
+accept = 1145
+rejected = 16754
+matrix size = 28
+fillins = 45
+solver = Normal
+Matrix Compiler1: 3.49 KB object code size  3.4/1.4/[0.7]
+Matrix Compiler2: off  [1.3]/1.4/2.1
+
+
