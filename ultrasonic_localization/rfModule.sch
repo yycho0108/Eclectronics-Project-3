@@ -37,11 +37,11 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 2 8
+Title "RF Module"
+Date "2017-11-06"
+Rev "V1"
+Comp "Jamax Corp"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -148,8 +148,6 @@ F 3 "" H 3100 2750 50  0001 C CNN
 	1    3100 2750
 	1    0    0    -1  
 $EndComp
-Text Label 2500 2600 2    60   ~ 0
-VDD
 $Comp
 L GND #PWR035
 U 1 1 59FC0938
@@ -480,6 +478,15 @@ NoConn ~ 8300 3800
 NoConn ~ 8400 3800
 NoConn ~ 8500 3800
 NoConn ~ 8600 3800
-Text Notes 2250 3700 0    60   ~ 0
-TODO : PULLUP RESISTORS
+$Comp
+L +3V3 #PWR?
+U 1 1 5A14A190
+P 2500 2600
+F 0 "#PWR?" H 2500 2450 50  0001 C CNN
+F 1 "+3V3" H 2500 2740 50  0000 C CNN
+F 2 "" H 2500 2600 50  0001 C CNN
+F 3 "" H 2500 2600 50  0001 C CNN
+	1    2500 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
