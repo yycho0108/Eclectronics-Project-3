@@ -37,11 +37,11 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 4 8
+Title "Power Module"
+Date "2017-11-06"
+Rev "V1"
+Comp "Jamax Corp"
 Comment1 ""
 Comment2 ""
 Comment3 ""
