@@ -15,4 +15,9 @@ D USB mini/micro connector
 K connector USB
 $ENDCMP
 #
+$CMP USB_OTG_fix
+D USB mini/micro connector
+K connector USB
+$ENDCMP
+#
 #End Doc Library
