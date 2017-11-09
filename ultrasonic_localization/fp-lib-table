@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name TCT40-16R_T)(type KiCad)(uri "$(KIPRJMOD)/lib/footprints/TCT40-16R_T.pretty")(options "")(descr ""))
+  (lib (name Custom)(type KiCad)(uri "$(KIPRJMOD)/lib/footprints/Custom.pretty")(options "")(descr ""))
 )
