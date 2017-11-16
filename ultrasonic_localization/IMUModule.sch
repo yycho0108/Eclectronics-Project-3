@@ -149,9 +149,9 @@ SCL_1V8
 Text Label 4225 3275 1    60   ~ 0
 SDA_1V8
 Text Label 4675 4225 0    60   ~ 0
-INT1
+INT1_1V8
 Text Label 3375 4025 2    60   ~ 0
-INT2
+INT2_1V8
 NoConn ~ 3375 3625
 NoConn ~ 3375 3825
 $Comp
@@ -316,9 +316,9 @@ F 3 "" H 5900 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6475 4250 2    60   ~ 0
-INT1
+INT1_1V8
 Text Label 6475 4050 2    60   ~ 0
-INT2
+INT2_1V8
 Wire Wire Line
 	5775 3650 6475 3650
 Wire Wire Line

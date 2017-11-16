@@ -291,17 +291,6 @@ $EndComp
 Text Notes 1025 625  0    60   ~ 0
 Power & Bypass Capacitors
 $Comp
-L Crystal_GND23 Y101
-U 1 1 59FBA6C6
-P 1275 4025
-F 0 "Y101" V 1275 4000 50  0000 L CNN
-F 1 "16MHz" V 1075 3900 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1275 4025 50  0001 C CNN
-F 3 "" H 1275 4025 50  0001 C CNN
-	1    1275 4025
-	0    1    1    0   
-$EndComp
-$Comp
 L GND #PWR010
 U 1 1 59FBA8CC
 P 1275 4300
@@ -1096,4 +1085,15 @@ Connection ~ 3250 3275
 Connection ~ 3125 3275
 Connection ~ 3000 3275
 Connection ~ 2900 3275
+$Comp
+L Crystal_GND24 Y101
+U 1 1 5A0D1906
+P 1275 4025
+F 0 "Y101" H 1400 4225 50  0000 L CNN
+F 1 "Crystal_GND24" H 1400 4150 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm" H 1275 4025 50  0001 C CNN
+F 3 "" H 1275 4025 50  0001 C CNN
+	1    1275 4025
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
