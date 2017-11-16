@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:ultrasonic_localization-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -155,7 +156,7 @@ INT2_1V8
 NoConn ~ 3375 3625
 NoConn ~ 3375 3825
 $Comp
-L Level_Shifter_4Channel U802
+L Level_Shifter_4Channel-RESCUE-ultrasonic_localization U802
 U 1 1 5A13EF11
 P 6975 3750
 F 0 "U802" H 6975 3750 60  0000 C CNN
