@@ -1,4 +1,105 @@
-Circuit: * C:\Users\ycho\Desktop\Academics\2017\FA\eclectronics\projects\03_loc\Eclectronics-Project-3\ultrasonic_localization\analysis\filter.asc
+
+   --- Expanded Deck Component Count ---
+A's 4
+C's 16
+G's 8
+Q's 1
+R's 41
+S's 8
+V's 3
+tot: 81
+
+
+    --- Expanded Netlist ---
+* C:\Users\ycho\Desktop\Academics\2017\FA\eclectronics\projects\03_loc\Eclectronics-Project-3\ultrasonic_localization\analysis\filter.asc
+r1 in p001 10k
+c1 n003 p001 10nf
+r n003 n006 62k
+r3 n006 n004 660
+v1 5v 0 5v
+r4 n004 vgnd 1k
+c2 vgnd 0 150nf
+c3 vgnd 0 1.2µf
+r5 5v vgnd 1k
+r6 vgnd 0 1k
+c4 n002 n004 1nf
+c5 n004 n001 1nf
+c6 n001 n002 12pf
+r7 n002 n001 40k
+r8 n001 p002 10k
+c7 p002 n005 10nf
+r9 n005 sig 75k
+r10 sig n007 4.53k
+r11 n008 vgnd 120k
+c8 n008 0 10nf
+r12 0 n008 3.3meg
+r13 thresh n008 75k
+r14 sig2 n007 120k
+r15 sig2 5v 10k
+q1 sig2 n010 0 0 bc547b
+r16 n010 n009 10k
+r17 0 n010 3.9k
+v2 in 0 sine(0 0.1 400000)
+v3 thresh 0 0v
+s:u1:1 n006 5v u1:n002 n006 u1:q 
+s:u1:2 0 n006 n006 u1:n002 u1:q 
+a:u1:1 n003 vgnd 0 0 0 0 u1:n002 0 ota g=0.01 ref=0 iout=0.00159154943091895 cout=1.59154943091895e-010 en=0 enk=0 in=0 ink=0 incm=0 incmk=0 vhigh=1e308 vlow=-1e308
+c:u1:3 n006 0 1p 
+c:u1:4 5v n006 1p 
+r:u1:2 u1:n002 0 200000000 noiseless 
+r:u1:1 5v u1:n002 200000000 noiseless 
+r:u1:3 5v vgnd 1000000000 noiseless 
+r:u1:4 5v n003 1000000000 noiseless 
+r:u1:5 n003 0 1000000000 noiseless 
+r:u1:6 vgnd 0 1000000000 noiseless 
+g:u1:1 0 u1:n002 0 u1:n002 table(0 0 10 0.00318309886183791)
+g:u1:2 u1:n002 0 u1:n002 5v table(0 0 10 0.00318309886183791)
+s:u2:1 n001 5v u2:n002 n001 u2:q 
+s:u2:2 0 n001 n001 u2:n002 u2:q 
+a:u2:1 n002 vgnd 0 0 0 0 u2:n002 0 ota g=0.01 ref=0 iout=0.00159154943091895 cout=1.59154943091895e-010 en=0 enk=0 in=0 ink=0 incm=0 incmk=0 vhigh=1e308 vlow=-1e308
+c:u2:3 n001 0 1p 
+c:u2:4 5v n001 1p 
+r:u2:2 u2:n002 0 200000000 noiseless 
+r:u2:1 5v u2:n002 200000000 noiseless 
+r:u2:3 5v vgnd 1000000000 noiseless 
+r:u2:4 5v n002 1000000000 noiseless 
+r:u2:5 n002 0 1000000000 noiseless 
+r:u2:6 vgnd 0 1000000000 noiseless 
+g:u2:1 0 u2:n002 0 u2:n002 table(0 0 10 0.00318309886183791)
+g:u2:2 u2:n002 0 u2:n002 5v table(0 0 10 0.00318309886183791)
+s:u3:1 sig 5v u3:n002 sig u3:q 
+s:u3:2 0 sig sig u3:n002 u3:q 
+a:u3:1 n005 vgnd 0 0 0 0 u3:n002 0 ota g=0.01 ref=0 iout=0.00159154943091895 cout=1.59154943091895e-010 en=0 enk=0 in=0 ink=0 incm=0 incmk=0 vhigh=1e308 vlow=-1e308
+c:u3:3 sig 0 1p 
+c:u3:4 5v sig 1p 
+r:u3:2 u3:n002 0 200000000 noiseless 
+r:u3:1 5v u3:n002 200000000 noiseless 
+r:u3:3 5v vgnd 1000000000 noiseless 
+r:u3:4 5v n005 1000000000 noiseless 
+r:u3:5 n005 0 1000000000 noiseless 
+r:u3:6 vgnd 0 1000000000 noiseless 
+g:u3:1 0 u3:n002 0 u3:n002 table(0 0 10 0.00318309886183791)
+g:u3:2 u3:n002 0 u3:n002 5v table(0 0 10 0.00318309886183791)
+s:u4:1 n009 5v u4:n002 n009 u4:q 
+s:u4:2 0 n009 n009 u4:n002 u4:q 
+a:u4:1 n008 n007 0 0 0 0 u4:n002 0 ota g=0.01 ref=0 iout=0.00159154943091895 cout=1.59154943091895e-010 en=0 enk=0 in=0 ink=0 incm=0 incmk=0 vhigh=1e308 vlow=-1e308
+c:u4:3 n009 0 1p 
+c:u4:4 5v n009 1p 
+r:u4:2 u4:n002 0 200000000 noiseless 
+r:u4:1 5v u4:n002 200000000 noiseless 
+r:u4:3 5v n007 1000000000 noiseless 
+r:u4:4 5v n008 1000000000 noiseless 
+r:u4:5 n008 0 1000000000 noiseless 
+r:u4:6 n007 0 1000000000 noiseless 
+g:u4:1 0 u4:n002 0 u4:n002 table(0 0 10 0.00318309886183791)
+g:u4:2 u4:n002 0 u4:n002 5v table(0 0 10 0.00318309886183791)
+.model bc547b npn(is=2.39e-14 nf=1.008 ise=3.545e-15 ne=1.541 bf=294.3 ikf=0.1357 vaf=63.2 nr=1.004 isc=6.272e-14 nc=1.243 br=7.946 ikr=0.1144 var=25.9 rb=1 irb=1.00e-06 rbm=1 re=0.4683 rc=0.85 xtb=0 eg=1.11 xti=3 cje=1.358e-11 vje=0.65 mje=0.3279 tf=4.391e-10 xtf=120 vtf=2.643 itf=0.7495 ptf=0 cjc=3.728e-12 vjc=0.3997 mjc=0.2955 xcjc=0.6193 tr=1.00e-32 cjs=0 vjs=0.75 mjs=0.333 fc=0.9579 vceo=45 icrating=100m mfg=nxp)
+.model u4:q sw(ron=10 roff=10meg vt=0 vh=-.1 vser=0 ilimit=0.025 noiseless level=2 epsilon=0)
+.model u3:q sw(ron=10 roff=10meg vt=0 vh=-.1 vser=0 ilimit=0.025 noiseless level=2 epsilon=0)
+.model u2:q sw(ron=10 roff=10meg vt=0 vh=-.1 vser=0 ilimit=0.025 noiseless level=2 epsilon=0)
+.model u1:q sw(ron=10 roff=10meg vt=0 vh=-.1 vser=0 ilimit=0.025 noiseless level=2 epsilon=0)
+.tran 0 0.0002625 0.0002 
+.end
 
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -7,20 +108,16 @@ Gmin = 1.07374
 Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
-vernier = 0.5
-Gmin = 0.000275318
-vernier = 0.666667
-vernier = 0.888888
-Gmin = 6.27402e-005
-vernier = 1
+Gmin = 0.000142725
+Gmin = 1.5325e-005
 vernier = 0.5
 vernier = 0.25
 vernier = 0.125
-Gmin = 1.84029e-005
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
 vernier = 0.0078125
+Gmin = 9.80797e-006
 vernier = 0.00390625
 vernier = 0.00195313
 vernier = 0.000976563
@@ -39,30 +136,30 @@ Source stepping failed
 
 Pseudo Transient succeeded in finding the operating point.
 
-avg_in: AVG(v(in))=9.76874e-010 FROM 0 TO 0.000625
-avg_sig: AVG(v(sig))=0.0135999 FROM 0 TO 0.000625
-re_in: AVG((v(in)-avg_in)*cos(360*time*freq))=3.67313e-005 FROM 0 TO 0.000625
-im_in: AVG(-(v(in)-avg_in)*sin(360*time*freq))=-0.000493203 FROM 0 TO 0.000625
-re_sig: AVG((v(sig)-avg_sig)*cos(360*time*freq))=5.95522e-006 FROM 0 TO 0.000625
-im_sig: AVG(-(v(sig)-avg_sig)*sin(360*time*freq))=4.06819e-005 FROM 0 TO 0.000625
-gainmag: 20*log10(hypot(re_sig,im_sig)/hypot(re_in,im_in) )=-21.6044
+avg_in: AVG(v(in))=-0.000427526 FROM 0 TO 6.24566e-005
+avg_sig: AVG(v(sig))=2.4885 FROM 0 TO 6.24566e-005
+re_in: AVG((v(in)-avg_in)*cos(360*time*freq))=0.00650783 FROM 0 TO 6.24566e-005
+im_in: AVG(-(v(in)-avg_in)*sin(360*time*freq))=-0.0491287 FROM 0 TO 6.24566e-005
+re_sig: AVG((v(sig)-avg_sig)*cos(360*time*freq))=1.0008 FROM 0 TO 6.24566e-005
+im_sig: AVG(-(v(sig)-avg_sig)*sin(360*time*freq))=-0.606567 FROM 0 TO 6.24566e-005
+gainmag: hypot(re_sig,im_sig)/hypot(re_in,im_in)=23.6141
 
 
-Date: Wed Nov 15 23:24:35 2017
-Total elapsed time: 7.574 seconds.
+Date: Fri Dec 01 17:43:04 2017
+Total elapsed time: 9.267 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 106210
-traniter = 2680
-tranpoints = 1341
-accept = 1145
-rejected = 16830
-matrix size = 30
+totiter = 134771
+traniter = 31423
+tranpoints = 11469
+accept = 7655
+rejected = 20470
+matrix size = 28
 fillins = 45
 solver = Alternate
-Matrix Compiler1: 4.50 KB object code size  5.1/3.9/[2.3]
-Matrix Compiler2: off  [2.2]/2.9/3.7
+Matrix Compiler1: 4.52 KB object code size  4.4/3.7/[2.4]
+Matrix Compiler2: off  [1.9]/4.3/3.9
 
 

@@ -1,6 +1,51 @@
-Circuit: * C:\Users\ycho\Desktop\Academics\2017\FA\eclectronics\projects\03_loc\Eclectronics-Project-3\ultrasonic_localization\analysis\schmitt.asc
 
-V3: Removing PWL point (0.00145,5)
+   --- Expanded Deck Component Count ---
+A's 1
+C's 3
+G's 2
+Q's 1
+R's 16
+S's 2
+V's 3
+tot: 28
+
+
+    --- Expanded Netlist ---
+* C:\Users\ycho\Desktop\Academics\2017\FA\eclectronics\projects\03_loc\Eclectronics-Project-3\ultrasonic_localization\analysis\schmitt.asc
+v2 5v 0 5v
+r3 5v vgnd 1k
+r4 vgnd 0 1k
+v3 thresh 0 pwl(0.0002 0 0.0062 0 0.0067 5 0.0502 5 0.2502 5 0.2512 0)
+r6 sig_in n001 4.53k
+r7 n004 vgnd 120k
+c2 0 n004 10pf
+r8 n004 0 3.3meg
+r9 thresh n004 75k
+r10 sig_out n001 120k
+r11 sig_out 5v 10k
+q1 sig_out n003 0 0 bc847a
+r12 n003 n002 10k
+r13 n003 0 3.9k
+s:u3:1 n002 5v u3:n002 n002 u3:q 
+s:u3:2 0 n002 n002 u3:n002 u3:q 
+a:u3:1 n004 n001 0 0 0 0 u3:n002 0 ota g=0.01 ref=0 iout=0.00159154943091895 cout=1.59154943091895e-010 en=0 enk=0 in=0 ink=0 incm=0 incmk=0 vhigh=1e308 vlow=-1e308
+c:u3:3 n002 0 1p 
+c:u3:4 5v n002 1p 
+r:u3:2 u3:n002 0 200000000 noiseless 
+r:u3:1 5v u3:n002 200000000 noiseless 
+r:u3:3 5v n001 1000000000 noiseless 
+r:u3:4 5v n004 1000000000 noiseless 
+r:u3:5 n004 0 1000000000 noiseless 
+r:u3:6 n001 0 1000000000 noiseless 
+g:u3:1 0 u3:n002 0 u3:n002 table(0 0 10 0.00318309886183791)
+g:u3:2 u3:n002 0 u3:n002 5v table(0 0 10 0.00318309886183791)
+v1 sig_in 0 sine(2.5 2.5 1000)
+.model bc847a npn(is=9.677e-15 nf=0.9922 ise=5.44e-15 ne=2 bf=182.1 ikf=0.14 vaf=143.8 nr=0.9935 isc=5.236e-12 nc=1.53 br=7.004 ikr=0.06 var=31.15 rb=10 irb=5.00e-06 rbm=4 re=0.78 rc=0.656 xtb=0 eg=1.11 xti=3 cje=1.443e-11 vje=0.733 mje=0.3514 tf=6.04e-10 xtf=8.94 vtf=3.78 itf=0.2711 ptf=0 cjc=3.287e-12 vjc=0.5444 mjc=0.3954 xcjc=0.6193 tr=0.00000011 cjs=0 vjs=0.75 mjs=0.333 fc=0.789 vceo=45 icrating=100m mfg=nxp)
+.model u3:q sw(ron=10 roff=10meg vt=0 vh=-.1 vser=0 ilimit=0.025 noiseless level=2 epsilon=0)
+.tran 0 0.0127 0.0002 
+.end
+
+V3: Removing PWL point (0.0502,5)
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -8,35 +53,40 @@ Gmin = 1.07374
 Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-005
-Gmin = 1.6455e-006
-Gmin = 1.76685e-007
-Gmin = 1.89714e-008
-Gmin = 2.03704e-009
-Gmin = 2.18725e-010
-Gmin = 2.34854e-011
-Gmin = 2.52173e-012
-Gmin = 2.70769e-013
+vernier = 0.5
+Gmin = 0.000275318
+vernier = 0.666667
+vernier = 0.888888
+Gmin = 6.27402e-005
+vernier = 1
+Gmin = 7.53781e-006
+Gmin = 8.09366e-007
+Gmin = 8.6905e-008
+Gmin = 9.33136e-009
+Gmin = 1.00195e-009
+Gmin = 1.07583e-010
+Gmin = 1.15517e-011
+Gmin = 1.24035e-012
+Gmin = 1.33182e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Mon Nov 13 16:56:22 2017
-Total elapsed time: 1.355 seconds.
+Date: Fri Dec 01 17:44:06 2017
+Total elapsed time: 0.592 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 47685
-traniter = 47227
-tranpoints = 20652
-accept = 12453
-rejected = 8199
+totiter = 17089
+traniter = 16569
+tranpoints = 5738
+accept = 4279
+rejected = 1459
 matrix size = 16
 fillins = 3
-solver = Normal
-Matrix Compiler1: 886 bytes object code size  0.8/0.5/[0.2]
-Matrix Compiler2: off  [0.7]/1.1/0.9
+solver = Alternate
+Matrix Compiler1: 1.08 KB object code size  1.7/1.1/[0.6]
+Matrix Compiler2: off  [1.1]/1.9/1.4
 
 
